@@ -5,23 +5,32 @@ import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import Curriculo from './components/header/Curriculo';
 import Portifolio from './components/pages/Portifolio';
+import Contato from './components/pages/Contato';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return ( 
-    <Fragment>
-      <Header></Header>
-      
-      <nav>
-        <ul>
-          <li className='button'><a href='#'>Currículo</a></li>
-          <li className='button'><a href='#'>Portfólio</a></li> {/* Corrigido */}
-          <li className='button'><a href='#'>Contato</a></li>
-        </ul>
-      </nav>
-      <Curriculo></Curriculo>
-      <Portifolio></Portifolio>
-      <Footer></Footer>
-    </Fragment>
+    <BrowserRouter>
+      <Fragment>
+        <Header />
+
+        <nav>
+          <ul>
+            <li className='button'><Link to="/">Currículo</Link></li>
+            <li className='button'><Link to="/portifolio">Portfólio</Link></li>
+            <li className='button'><Link to="/contato">Contato</Link></li>
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<Curriculo />} />
+          <Route path="/portifolio" element={<Portifolio />} />
+          <Route path="/contato" element={<Contato />} />
+        </Routes>
+
+        <Footer />
+      </Fragment>
+    </BrowserRouter>
   );
 }
 
