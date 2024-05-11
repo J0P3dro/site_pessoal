@@ -1,0 +1,75 @@
+header {
+  padding: 50px;
+}
+header img {
+  width: 170px;
+  height: 170;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  border: 3px solid #000;
+}
+
+section {
+  margin: 50px;
+  padding: 50px;
+  background-color: #5AC073;
+  color: #347142;
+  border-radius: 25px;
+}
+
+header, footer {
+  background-color: #5F966C;
+  text-align: center;
+  color: white;
+}
+nav {
+  background-color: #5AC073;   
+  text-align: center;
+}
+
+nav ul{
+  margin: 0;
+  padding: 25px;
+}
+
+nav ul li{
+  display: inline;
+  margin: 50px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #347142;
+}
+
+footer {
+  padding: 50px;
+}
+
+footer li {
+  padding: 10px;
+}
+
+.button{
+  border:0;
+  color: #ffff;
+  padding: 25px;
+  background-color: #5AC073;
+}
+
+.button:hover{
+  cursor: pointer;
+  color: #FFFF;
+  background-color:#3FA959;
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul li{
+      display: inline;
+      margin: 50px;
+  }
+}

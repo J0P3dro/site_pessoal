@@ -1,0 +1,13 @@
+main {
+    text-align: center;
+}
+.item-portifólio {
+    display: inline-block;
+    margin: 150px;
+    border: 1px solid #000;
+}
+.item-portifólio a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+}
