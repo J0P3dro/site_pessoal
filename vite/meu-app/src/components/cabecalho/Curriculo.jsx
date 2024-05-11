@@ -1,4 +1,5 @@
 import React from "react";
+import './curriculo.css'; // Importando o arquivo CSS diretamente
 
 function Curriculo() {
   return (
@@ -30,7 +31,7 @@ function Curriculo() {
         <h2>Profissional</h2>
         <ul>
           {[1, 2, 3].map((item, index) => (
-            <li key={index}>
+            <li key={index + 3}> {/* Usando index + 3 para chaves únicas */}
               (2023 - 2024) Help Desk da empresa ALPHA SYSTEMAS;
             </li>
           ))}

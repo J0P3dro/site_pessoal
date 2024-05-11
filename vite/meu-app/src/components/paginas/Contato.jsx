@@ -3,9 +3,9 @@ import "./Contato.css";
 
 function Contato() {
     return (
-        <main>
+        <>
 
-        <form onsubmit="event.preventDefault()">
+        <form onSubmit="event.preventDefault()">
             <fieldset>
                 <label htmlFor="input-nome">Nome</label>
                 <input type="text" name="input-nome" id="input-nome" required minLength="2" />
@@ -25,7 +25,7 @@ function Contato() {
             <center><input type="submit" value="ENVIAR" className="button" /></center>
         </form>
 
-        </main>
+        </>
     );
 }
 

@@ -1,34 +1,31 @@
 import React, { Fragment } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import './App.css';
+
 import jpAvatar from './assets/jp-avatar.jpg';
-import Header from './components/header/header';
-import Footer from './components/footer/footer';
-import Curriculo from './components/header/Curriculo';
-import Portifolio from './components/pages/Portifolio';
-import Contato from './components/pages/Contato';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
+import Cabecalho from './components/cabecalho/cabecalho';
+import Rodape from './components/rodape/rodape';
+
+import Curriculo from './components/cabecalho/Curriculo';
+import Portifolio from './components/paginas/Portifolio';
+import Contato from './components/paginas/Contato';
+
+import BarraNavegacao from './components/barraNavegacao/barraNavegacao';
 
 function App() {
   return ( 
     <BrowserRouter>
       <Fragment>
-        <Header />
-
-        <nav>
-          <ul>
-            <li className='button'><Link to="/">Currículo</Link></li>
-            <li className='button'><Link to="/portifolio">Portfólio</Link></li>
-            <li className='button'><Link to="/contato">Contato</Link></li>
-          </ul>
-        </nav>
-
+        <Cabecalho />
+       <BarraNavegacao></BarraNavegacao>
         <Routes>
           <Route path="/" element={<Curriculo />} />
           <Route path="/portifolio" element={<Portifolio />} />
           <Route path="/contato" element={<Contato />} />
         </Routes>
-
-        <Footer />
+        <Rodape />
       </Fragment>
     </BrowserRouter>
   );
