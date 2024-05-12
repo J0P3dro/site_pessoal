@@ -8,9 +8,9 @@ import jpAvatar from './assets/jp-avatar.jpg';
 import Cabecalho from './components/cabecalho/cabecalho';
 import Rodape from './components/rodape/rodape';
 
-import Curriculo from './components/cabecalho/Curriculo';
-import Portifolio from './components/paginas/Portifolio';
-import Contato from './components/paginas/Contato';
+import Curriculo from './components/paginas/Curriculo/Curriculo';
+import Portifolio from './components/paginas/Portifolio/Portifolio';
+import Contato from './components/paginas/Contato/Contato';
 
 import BarraNavegacao from './components/barraNavegacao/barraNavegacao';
 
